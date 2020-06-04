@@ -1,0 +1,61 @@
+<view class="contain">
+  <view class="add">
+    <text bindtap="addFood">添加</text>
+  </view>
+  <scroll-view class="scrollView" scroll-y="true">
+    <view class="foodList" wx:for="{{foodList}}" wx:key="{{index}}" data-index="{{index}}" data-name="{{item.name}}">
+      <image src="{{item.img}}"></image>
+      <text>{{item.name}}</text>
+      <view class="deal">
+        <view  class="count">
+          <view class="subtract" data-index="{{index}}" bindtap="coutSubtract">-</view>
+          <text>{{item.cout}}</text>
+          <view class="subtract" data-index="{{index}}" bindtap="coutAdd">+</view>
+        </view>
+        <text bindtap="addCar" data-index="{{index}}" data-info="{{item}}">加入购物车</text>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="submit">
+    <view class="shoppingCar" bindtap="shopCar">
+      <view>
+        <image src="../../images/car.png"></image>
+        <text class="chooseCout">{{chooseCout}}</text>
+      </view>
+      <text>查看已选择</text>
+    </view>
+    <text class="commit">确定</text>
+  </view>
+  <view class="tipAdd" animation="{{animation}}"  wx:if="{{showAdd}}">
+    <view class="addView">
+      <view class="title"><text>添加零食</text></view>
+      <form class="addImg" bindsubmit="formSubmit">
+        <view class="imgShow">
+          <image name="img" bindtap="selectPhoto" name="image" src="{{imgUrl}}"></image>
+          <view class="addMsg" >
+            <text>名称:</text>
+            <input name="name" value="{{name}}" type='text' placeholder="添加零食名称" value="{{foodName}}"></input>
+          </view>
+        </view>
+        <view class="addBtn">
+          <button size="mini" bindtap="closeAnimation">取消</button>
+          <button size="mini" type="primary" form-type="submit">确定</button>
+        </view>
+        
+      </form>
+    </view>
+  </view>
+  
+  <!-- <scroll-view class="hasChoose">
+    <view wx:for="{{16}}" class="chooseItem">
+      <text>泡面</text>
+      <view class="deal">
+        <view  class="count">
+          <view class="subtract">-</view>
+          <text>0</text>
+          <view class="subtract">+</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view> -->
+</view>

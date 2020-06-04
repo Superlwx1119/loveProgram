@@ -1,0 +1,16 @@
+<!--miniprogram/pages/whichEat/whichEat.wxml-->
+<view class='contain'>
+  <image src='../../images/timg.jpg' mode='scaleToFill'></image>
+  <text class='whichFood'>{{whichFood}}</text>
+  <view class='bigCircle'  id='circle'>
+    
+    <canvas canvas-id='item' animation="{{animationData}}" class='canvasItem'></canvas>
+    <!-- <view class='circleItem' style="border-right:{{borderWidth}} rpx solid #A52A2A" wx:for='{{food}}' wx:key='{{index}}'>
+      <text>{{item}}</text>
+    </view> -->
+    <view class='circle' >
+      <text class='start' bindtouchstart='touchStart' bindtouchend='touchEnd' bindtap='startChoose'>开始</text>
+      <view class='triangle'></view>
+    </view>
+  </view>
+</view>

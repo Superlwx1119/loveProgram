@@ -1,0 +1,196 @@
+/**index.wxss**/
+.container {
+  display: flex;
+  background: rgb(171, 223, 201);
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+  width: 750rpx;
+  overflow: hidden;
+}
+.usermotto{
+  width: 165rpx;
+  height: 400rpx;
+  overflow: hidden;
+  position: absolute;
+  bottom: 130rpx;
+  z-index: 999;
+}
+.usermotto image{
+  width: 445rpx;
+  height: 400rpx;
+  transform: rotateY(180deg);
+}
+.sky{
+  position: absolute;
+  top: 100rpx;
+  left: 0;
+  width: 1500rpx;
+  height: 100rpx;
+  display: flex;
+}
+.contactCloud{
+  width: 750rpx;
+  height: 200rpx;
+}
+.imgMove{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.imgMove2{
+  position: absolute;
+  top: 0;
+  left: -150rpx;
+}
+.imgMove3{
+  position: absolute;
+  top: 0;
+  left: -300rpx;
+}
+.dimian{
+  height: 250rpx;
+  width: 1500rpx;
+  position: absolute;
+  bottom: 0;
+  
+}
+.ground{
+  height: 140rpx;
+  width: 755rpx;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.ground2{
+  height: 140rpx;
+  width: 750rpx;
+  position: absolute;
+  bottom: 0;
+  left: 750rpx;
+}
+.grass{
+  height: 110rpx;
+  width: 755rpx;
+  position: absolute;
+  bottom: 140rpx;
+  left: 0;
+}
+.grass2{
+  height: 110rpx;
+  width: 750rpx;
+  position: absolute;
+  bottom: 140rpx;
+  left: 750rpx;
+}
+.background{
+  position: absolute;
+  left: 0;
+  bottom:250rpx;
+  width: 99999rpx;
+  height: 700rpx;
+}
+.cloud{
+  position: absolute;
+  left: 0;
+  top: 90rpx;
+  width: 200rpx;
+  height: 140rpx;
+}
+.mountain{
+  position: absolute;
+  left: 1700rpx;
+  bottom: 0;
+  width: 4%;
+}
+.biaozhipai{
+  position: absolute;
+  left: 900rpx;
+  bottom: -1rpx;
+  width: 350rpx;
+  z-index: 100;
+}
+.changsha{
+  position: absolute;
+  left: 4000rpx;
+  bottom: 0;
+  width: 1350rpx;
+  z-index: 100;
+}
+.dongche{
+  position: absolute;
+  left: 1000rpx;
+  bottom: 0;
+  width: 1500rpx;
+  overflow: hidden;
+  z-index: 101;
+  height: 500rpx;
+}
+.didi{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 999;
+  width: 1500rpx;
+}
+.didi2{
+
+  width: 1500rpx;
+  position: absolute;
+}
+.yushannanzhan{
+  position: absolute;
+  left: 2500rpx;
+  bottom: 0;
+  width: 800rpx;
+  z-index: 102;
+}
+.tree{
+  position: absolute;
+  left: 4500rpx;
+  bottom: 0;
+  width: 5%;
+}
+.lamp{
+  position: absolute;
+  bottom: 0;
+  width: 200rpx;
+  z-index: 99;
+}
+.stool{
+  position: absolute;
+  bottom: 0;
+  width: 200rpx;
+  z-index: 99;
+}
+.hainanhouse{
+  position: absolute;
+  bottom: 0;
+  width: 700rpx;
+  z-index: 99;
+}
+.biaoti{
+  position: absolute;
+  top: -50rpx;
+  width: 750rpx;
+  z-index: 1000;
+}
+.biaoti image{
+  width: 100%;
+}
+.timeDate{
+  position: absolute;
+  left: 0;
+  top: 20rpx;
+  width: 100%;
+  text-align: center;
+}
+.timeDay{
+  position: absolute;
+  left: 0;
+  top: 70rpx;
+  width: 100%;
+  font-size: 30rpx;
+  text-align: center;
+}

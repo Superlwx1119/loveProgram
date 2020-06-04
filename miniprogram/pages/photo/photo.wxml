@@ -1,0 +1,11 @@
+<view class='photo'>
+  <view class='beautiful' >
+  <canvas canvas-id='beatiPhoto' catchtouchstart='startImg' catchtouchmove='moveImg' id='canvasId' class='canvasShow'></canvas>
+   <!-- <image src='../../images/jing.jpeg' mode='widthFix'></image> -->
+  </view>
+  <view class='btn'>
+    <button size='mini' bindtap='selectPhoto' type='primary'>选择</button>
+    <button size='mini' bindtap='saveImg' type='primary'>保存</button>
+    <button size='mini' bindtap='showHistory' type='primary'>记录</button>
+  </view>
+</view>

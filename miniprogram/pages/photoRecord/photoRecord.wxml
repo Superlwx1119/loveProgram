@@ -1,0 +1,13 @@
+<view>
+  <!-- <view>
+    <button bindtap='backTo'>返回</button>
+  </view> -->
+  <scroll-view>
+    <view class='scrollView' wx:for="{{photoList}}" wx:key="{{indedx}}" >
+      <view class='delete' bindtap='deleteImg' data-imgs="{{item.img}}" data-id="{{item._id}}">X</view>
+      <view>
+        <image bindtap='showBigImg' data-id="{{item._id}}" src='{{item.img}}'></image>
+      </view>
+    </view>
+  </scroll-view>
+</view>

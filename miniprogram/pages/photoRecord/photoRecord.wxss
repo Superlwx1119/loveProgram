@@ -1,0 +1,22 @@
+/* miniprogram/pages/photoRecord/photoRecord.wxss */
+.scrollView{
+  position: relative;
+  padding: 20rpx;
+}
+.scrollView image{
+  width: 100%;
+  height: 400rpx;
+}
+.delete{
+  color: white;
+  background: red;
+  border-radius: 50%;
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  font-size: 18rpx;
+  text-align: center;
+  line-height: 30rpx;
+}

@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view class="container" style="height:{{windowHeight}}">
+  <!-- 小人儿 -->
+  <view class="usermotto">
+    <image class='{{imgMove}}' src="{{image.we}}" mode="cover"></image>
+  </view>
+  <!-- 天空 -->
+  <view class='sky' style='left:{{imgLeft}}'>  
+    <image class='contactCloud' src="{{image.contactCloud}}" mode="widthFix"></image>
+    <image class='contactCloud' src="{{image.contactCloud}}" mode="widthFix"></image>
+  </view>
+  <!-- 背景 -->
+  <view class='background'>
+    <view class='biaoti' bindtap='showList' style='left:{{biaotiLeft}}'>
+    <image  src="{{image.biaoti}}" mode="widthFix"></image>
+    <text class='timeDate'>{{time}}</text>
+    <text class='timeDay'>一起走过的第{{days}}天</text>
+    </view>
+    
+    <image class='cloud' style='left:{{cloudLeft}}' src="{{image.cloud}}" mode="widthFix"></image>
+    <image class='stool' style='left:{{stoolLeft}}' src="{{image.stool}}" mode="widthFix"></image>
+    <image class='lamp' style='left:{{lampLeft}}' src="{{image.lamp}}" mode="widthFix"></image>
+    <image class='biaozhipai' style='left:{{biaozhiLeft}}' src="{{image.biaozhipai}}" mode="widthFix"></image>
+    <view  class='dongche' style='left:{{dongcheLeft}}'>
+     <image class='{{didi}}' style='left:{{didiLeft}}' src="{{image.dongche}}" mode="widthFix"></image>
+    </view>
+    <image class='yushannanzhan' style='left:{{guilinLeft}}' src="{{image.yushannanzhan}}" mode="widthFix"></image>
+    <image class='changsha' style='left:{{changshaLeft}}' src="{{image.changsha}}" mode="widthFix"></image>
+    <image class='hainanhouse' style='left:{{hainanhouseLeft}}' src="{{image.hainanhouse}}" mode="widthFix"></image>
+    <image class='mountain' style='left:{{mountainLeft}}' src="{{image.mountain}}" mode="widthFix"></image>
+    <image class='tree' style='left:{{treeLeft}}' src="{{image.tree}}" mode="widthFix"></image>
+  </view>
+  <!-- 地面 -->
+  <view class='dimian' style='left:{{imgLeft}}'>
+    <view>  
+      <image class='grass' src="{{image.grass}}" mode="cover"></image>
+      <image class='ground' src="{{image.ground}}" mode="cover"></image>
+    </view>
+    <view>  
+      <image class='grass2' src="{{image.grass}}" mode="cover"></image>
+      <image class='ground2' src="{{image.ground}}" mode="cover"></image>
+    </view>
+  </view>
+</view>
+<audio id='myLove' loop='true'  src='https://lwxandhmm66.com/love/music.MP3'></audio>

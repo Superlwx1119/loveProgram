@@ -1,0 +1,39 @@
+{
+  "pages": [
+    
+    "pages/index/index",
+    "pages/insert/insert",
+    "pages/search/search",
+    "pages/photoRecord/photoRecord",
+    "pages/photo/photo",
+    "pages/shoppingCar/shoppingCar",
+    "pages/foodList/foodList"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "我们"
+      },
+      {
+        "pagePath": "pages/photo/photo",
+        "text": "美图秀"
+      },
+      {
+        "pagePath": "pages/insert/insert",
+        "text": "吩咐"
+      },
+      {
+        "pagePath": "pages/foodList/foodList",
+        "text": "选零食"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "我们努力中...",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

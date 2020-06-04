@@ -1,0 +1,33 @@
+<view class="page">
+  <view class="edit"><text bindtap="startEdit">{{dealName}}</text></view>
+  <scroll-view  class="goodsList" scroll-y="true">
+    <view wx:for="{{goodsList}}" wx:key="{{indedx}}" class="listItem">
+      <image bindtap="checkThis" data-index="{{index}}" animation="{{animation2}}" class="checkbox" wx:if="{{!item.check}}" hidden="{{item.check&&edit}}" src="../../images/weigouxuan.svg"></image>
+      <image bindtap="checkThis" data-index="{{index}}" animation="{{animation2}}" class="checkbox" wx:if="{{item.check}}" hidden="{{!item.check&&edit}}" src="../../images/choosehandle.svg"></image>
+      <image animation="{{animation}}" class="goodImg" src="{{item.img}}"></image>
+      <view animation="{{animation}}" class="detali">
+        <text class="goodName">{{item.name}}</text>
+        <view class="count">
+          <!-- <text>￥{{9.9}}</text> -->
+          <view class="btn">
+            <text data-index="{{index}}" bindtap="coutSubtract">-</text>
+            <text class="btn_num">{{item.cout}}</text>
+            <text data-index="{{index}}" bindtap="coutAdd">+</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="submit">
+    <view class="choose"  bindtap="checkAll">
+      <image wx:if="{{checkAll}}" class="checkbox2" src="../../images/weigouxuan.svg"></image>
+      <image wx:else class="checkbox" src="../../images/choosehandle.svg"></image>
+      <text>全选</text>
+    </view>
+    <view class="confirm">
+      <view hidden="{{edit}}">数量:12</view>
+      <view>{{subName}}</view>
+    </view>
+
+  </view>
+</view>

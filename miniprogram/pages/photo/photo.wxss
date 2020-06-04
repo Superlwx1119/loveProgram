@@ -1,0 +1,46 @@
+/* miniprogram/pages/photo/photo.wxss */
+page{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.photo{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.canvasShow{
+  width: 100%;
+  height: 100%;
+}
+.beautiful{
+  flex: 1;
+  background: #e5e5e5;
+  overflow: hidden;
+  height: 100%;
+}
+.btn{
+  display: flex;
+  flex:0 0 100rpx;
+  justify-content: space-around;
+}
+.btn button{
+  flex: 1;
+  margin: 20rpx;
+}
+.delete{
+  color: white;
+  background: red;
+  border-radius: 50%;
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 18rpx;
+  text-align: center;
+  line-height: 30rpx;
+}

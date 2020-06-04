@@ -1,0 +1,26 @@
+<!--pages/insert/insert.wxml-->
+<view class='content'>
+  <image class='heart1' src='../../images/heart1.gif' mode="cover"></image>
+  <form bindsubmit="formSubmit" class='formData'>
+    <view class='center'>
+      <text>吩咐:</text>
+      <!-- <textarea value="{{content}}" name="content" /> -->
+      <input type='text' name='content' value="{{content}}"></input>
+    </view>
+    <view class='center'>
+      <text>重要程度:</text>
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          <input type='text' disabled name='important' placeholder='不选即为看着办' value="{{important}}"></input>
+          {{array[index]}}
+        </view>
+      </picker>
+      
+    </view>
+    <view class='center'>
+      <button size='mini' form-type="submit">Do it!</button>
+      <button size='mini' bindtap='showHistory'>记录</button>
+    </view>
+  </form >
+  <image class='heart3' src='../../images/heart3.gif' mode="cover"></image>
+</view>

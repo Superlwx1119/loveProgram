@@ -1,0 +1,20 @@
+<!--pages/login/login.wxml-->
+<view class='content' style="height:{{windowHeight}}">
+  
+  <image class='background'  mode='scaleToFill' src='../../images/background.jpg'></image>
+  <form bindsubmit="formSubmit" class='formData'>
+    
+    <view class='center'>
+      <text>饲养员:</text>
+      <input type='text' name='man' value="{{man}}"></input>
+    </view>
+    <view class='center'>
+      <text>米虫虫:</text>
+      <input type='text' name='woman' value="{{woman}}"></input>
+    </view>
+    <view class='center'>
+      <!-- <button open-type='getPhoneNumber'>获取用户信息</button> -->
+      <button size='mini' bindtap='onGetUserInfo' form-type="submit">开启幸福</button>
+    </view>
+  </form >
+</view>

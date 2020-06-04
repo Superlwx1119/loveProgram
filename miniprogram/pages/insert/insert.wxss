@@ -1,0 +1,37 @@
+/* pages/insert/insert.wxss */
+.heart1{
+  width: 750rpx
+}
+.formData{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500rpx;
+  border: 1rpx solid black;
+  border-radius: 10rpx;
+}
+.center{
+  width: 500rpx;
+  display: flex;
+  justify-content: center;
+  margin: 30rpx 0;
+}
+.center text{
+  font-size: 30rpx;
+  width: 150rpx;
+  padding-top: 15rpx;
+  text-align: center;
+}
+.center input{
+  width: 300rpx;
+  margin-left: 20rpx;
+  font-size: 24rpx;
+  border-bottom: 1rpx solid black;
+}
+.heart3{
+  width: 350rpx;
+  height: 350rpx;
+  margin: 150rpx;
+  padding-top: 100rpx;
+}
